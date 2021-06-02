@@ -19,6 +19,6 @@ const handleLogin = (req, res) => {
 app.get("/", gossipMiddleware, handleHome);
 app.get("/login", handleLogin);
 
-const handlerListen = () => console.log("✅ Server listening on port http://localhost:${PORT} ☄️")
+const handlerListen = () => console.log(`✅ Server listening on port http://localhost:${PORT}☄️`)
 
 app.listen(PORT, handlerListen);
